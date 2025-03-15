@@ -1,0 +1,166 @@
+/* Trending Products Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+header.scrolled {
+    background-color: #388E3C; /* Darker green when scrolled */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a:hover {
+    color: #FFEB3B; /* Yellow hover effect */
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header input[type="text"] {
+    padding: 8px 12px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 20px;
+    transition: border-color 0.3s, background-color 0.3s;
+    outline: none;
+}
+
+header input[type="text"]:focus {
+    border-color: #FFEB3B; /* Yellow focus border */
+    background-color: #f9f9f9; /* Light grey */
+}
+
+.sign-up {
+    padding: 10px 20px;
+    background-color: #FFEB3B; /* Yellow background */
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #4CAF50; /* Green text */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-up:hover {
+    background-color: #4CAF50; /* Green on hover */
+    color: white;
+}
+.trending-products-page {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.trending-products-page h2 {
+    text-align: center;
+    color: #4CAF50; /* Green heading */
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}

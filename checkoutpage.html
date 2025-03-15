@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Grove Green Organics</title>
+    <link rel="stylesheet" href="checkoutpage.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">Grove Green Organics</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="grovegreenorganics.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="offerpage.html">Offers</a></li>
+                <li><a href="aboutuspage.html">About Us</a></li>
+                <li><a href="cartpage.html">Cart</a></li>
+                <li><a href="contactuspage.html">Contact Us</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout">
+            <h2>Checkout</h2>
+
+            <div class="checkout-container">
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="order-items">
+                        <!-- Cart items will be dynamically inserted here -->
+                    </div>
+                    <div class="summary-total">
+                        <p>Total Items: <span id="total-items">0</span></p>
+                        <p>Total Price: <span id="total-price">$0.00</span></p>
+                    </div>
+                </div>
+
+                <form class="checkout-form" id="checkoutForm">
+                    <h3>Shipping Information</h3>
+                    <label for="shipping-name">Full Name:</label>
+                    <input type="text" id="shipping-name" name="shipping-name" placeholder="Enter your full name" required>
+
+                    <label for="shipping-address">Address:</label>
+                    <input type="text" id="shipping-address" name="shipping-address" placeholder="Enter your shipping address" required>
+
+                    <label for="shipping-city">City:</label>
+                    <input type="text" id="shipping-city" name="shipping-city" placeholder="Enter your city" required>
+
+                    <label for="shipping-state">State:</label>
+                    <input type="text" id="shipping-state" name="shipping-state" placeholder="Enter your state" required>
+
+                    <label for="shipping-zip">ZIP Code:</label>
+                    <input type="text" id="shipping-zip" name="shipping-zip" placeholder="Enter your ZIP code" required>
+
+                    <label for="payment-method">Payment Method:</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="" disabled selected>Select Payment Method</option>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+
+                    <div id="credit-card-details" class="payment-details">
+                        <label for="card-number">Credit Card Number:</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="Enter your credit card number">
+
+                        <label for="card-expiry">Expiry Date:</label>
+                        <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY">
+
+                        <label for="card-cvc">CVC:</label>
+                        <input type="text" id="card-cvc" name="card-cvc" placeholder="CVC">
+                    </div>
+
+                    <button type="submit" class="checkout-btn">Place Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Grove Green Organics. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+    <script src="checkoutpage.js"></script>
+</body>
+</html> 

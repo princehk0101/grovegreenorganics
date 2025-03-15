@@ -1,0 +1,220 @@
+/* Additional Styles for Signup Page */
+
+/* General styling for form sections */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+header.scrolled {
+    background-color: #388E3C; /* Darker green when scrolled */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a:hover {
+    color: #FFEB3B; /* Yellow hover effect */
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header input[type="text"] {
+    padding: 8px 12px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 20px;
+    transition: border-color 0.3s, background-color 0.3s;
+    outline: none;
+}
+
+header input[type="text"]:focus {
+    border-color: #FFEB3B; /* Yellow focus border */
+    background-color: #f9f9f9; /* Light grey */
+} 
+.signup {
+    padding: 50px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signup h2 {
+    color: #4CAF50; /* Green heading */
+    font-size: 2.4em;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4CAF50; /* Green labels */
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50; /* Green border on focus */
+}
+
+.signup-btn {
+    padding: 12px 20px;
+    background-color: #FFEB3B; /* Yellow button */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #4CAF50; /* Green text */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #4CAF50; /* Green background on hover */
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .signup {
+        padding: 20px;
+    }
+} 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-media a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+
+.social-media a:hover {
+    color: #FFEB3B; /* Yellow on hover */
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFEB3B;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    color: #4CAF50;
+    display: none; /* Hidden by default */
+    font-size: 22px;
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#scroll-to-top:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #4CAF50;
+        width: 220px;
+        border-radius: 10px;
+        transition: max-height 0.3s ease-in;
+    }
+    .nav-links.active {
+        display: flex;
+        max-height: 400px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .header-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+} 

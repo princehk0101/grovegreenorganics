@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Grove Green Organics</title>
+    <link rel="stylesheet" href="cartpage.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Cart</h1>
+        <!-- Cart Items Section -->
+        <div id="cart-items">
+            <!-- Sample Item Template (Dynamically generated in JavaScript) -->
+            <div class="cart-item" data-id="1">
+                <p>Product Name: Organic Apple</p>
+                <p>Price: ₹<span class="item-price">100.00</span></p>
+                <p>Quantity: 
+                    <button class="decrease-btn">-</button>
+                    <input type="number" class="item-quantity" value="1" min="1">
+                    <button class="increase-btn">+</button>
+                </p>
+                <p>Total: ₹<span class="item-total">100.00</span></p>
+                <button class="remove-item">Remove</button>
+            </div>
+            <!-- More cart items will be dynamically inserted -->
+        </div>
+
+        <!-- Cart Summary Section -->
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <p>Total Items: <span id="total-items">1</span></p>
+            <p>Total Price: ₹<span id="total-price">100.00</span></p>
+            <button id="checkout-btn"><a href="checkoutpage.html">Proceed to Checkout</a></button>
+        </div>
+    </div>
+
+    <script src="cartpage.js"></script>
+</body>
+</html> 

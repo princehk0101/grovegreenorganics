@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Grove Green Organics</title>
+    <link rel="stylesheet" href="contactuspage.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">Grove Green Organics</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="grovegreenorganics.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="offerpage.html">Offers</a></li>
+                <li><a href="aboutuspage.html">About Us</a></li>
+                <li><a href="cartpage.html">Cart</a></li>
+                <li><a href="contactuspage.html">Contact Us</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            
+            <div class="contact-container">
+                <form class="contact-form" id="contactForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="6" required></textarea>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div class="contact-details">
+                    <h3>Contact Details</h3>
+                    <p><strong>Email:</strong> info@grovegreenorganics.com</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Address:</strong> 123 Organic Street, Green City</p>
+
+                    <div class="map">
+                        <h3>Find Us Here:</h3>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0194454024324!2d144.963157515318!3d-37.81410797975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d11b1dd464e8!2sOrganic%20Market!5e0!3m2!1sen!2s!4v1609930277329!5m2!1sen!2s" 
+                            width="100%" 
+                            height="300" 
+                            frameborder="0" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            aria-hidden="false" 
+                            tabindex="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Grove Green Organics. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+    <script src="contactuspage.js"></script> 
+</body>
+</html> 

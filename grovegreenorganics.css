@@ -1,0 +1,312 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+header.scrolled {
+    background-color: #388E3C; /* Darker green when scrolled */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a:hover {
+    color: #FFEB3B; /* Yellow hover effect */
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header input[type="text"] {
+    padding: 8px 12px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 20px;
+    transition: border-color 0.3s, background-color 0.3s;
+    outline: none;
+}
+
+header input[type="text"]:focus {
+    border-color: #FFEB3B; /* Yellow focus border */
+    background-color: #f9f9f9; /* Light grey */
+}
+
+.sign-up {
+    padding: 10px 20px;
+    background-color: #FFEB3B; /* Yellow background */
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #4CAF50; /* Green text */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-up:hover {
+    background-color: #4CAF50; /* Green on hover */
+    color: white;
+}
+
+.banner {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url('organic-food-in-ahmedabad.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    animation: slideInDown 1.5s;
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.shop-now {
+    padding: 12px 24px;
+    background-color: #FFEB3B; /* Yellow background */
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #4CAF50; /* Green text */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1;
+    position: relative;
+}
+
+.shop-now:hover {
+    background-color: #4CAF50; /* Green on hover */
+    color: white;
+}
+
+.trending, .categories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #4CAF50; /* Green headings */
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.product-grid, .category-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    margin-top: 20px;
+}
+
+.product-card, .category-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    background-color: #fefefe; /* Light white for cards */
+    cursor: pointer;
+}
+
+.product-card:hover, .category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #FFEB3B; /* Highlighted yellow on hover */
+}
+
+.product-card img, .category-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: transform 0.3s;
+}
+
+.product-card img:hover, .category-card img:hover {
+    transform: scale(1.1);
+}
+
+.product-card p, .category-card p {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #4CAF50; /* Green text */
+}
+
+.product-card span {
+    font-size: 1.1em;
+    color: #777; /* Subtle text color for prices */
+}
+
+.see-all {
+    margin-top: 40px;
+    padding: 12px 25px;
+    background-color: #FFEB3B; /* Yellow background */
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #4CAF50; /* Green text */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.see-all:hover {
+    background-color: #4CAF50; /* Green on hover */
+    color: white;
+}
+
+footer {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 5px solid #FFEB3B; /* Yellow top border */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-media a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+
+.social-media a:hover {
+    color: #FFEB3B; /* Yellow on hover */
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFEB3B;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    color: #4CAF50;
+    display: none; /* Hidden by default */
+    font-size: 22px;
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#scroll-to-top:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #4CAF50;
+        width: 220px;
+        border-radius: 10px;
+        transition: max-height 0.3s ease-in;
+    }
+    .nav-links.active {
+        display: flex;
+        max-height: 400px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .header-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+} 

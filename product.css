@@ -1,0 +1,52 @@
+/* Additional Styles for Product Page */
+
+.product {
+    display: flex;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.product-details {
+    max-width: 600px;
+}
+
+.product-details h2 {
+    color: #4CAF50; /* Green heading */
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    color: #FFEB3B; /* Yellow price */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.product-details p {
+    color: #555; /* Darker grey for text */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    padding: 15px 30px;
+    background-color: #4CAF50; /* Green button */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #388E3C; /* Darker green on hover */
+} 
